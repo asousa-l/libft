@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	c;
 
 	c = 0;
-	while (lst != '\0')
+	while (lst != (void *)0)
 	{
 		c++;
 		lst = lst->next;

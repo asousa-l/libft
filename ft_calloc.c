@@ -21,4 +21,5 @@ void	*ft_calloc(size_t count, size_t size)
 	dest = malloc(size * count);
 	if (!dest)
 		return (NULL);
-	return (ft_memset((unsigned char *)ptr, 0, count * size));
+	return (ft_memset((unsigned char *)dest, 0, count * size));
+}

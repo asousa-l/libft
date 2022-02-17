@@ -23,10 +23,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	b = (char *)dst;
 	if (a < b)
 	{
-		while (n-- > 0)
+		while (len-- > 0)
 			*b++ = *a++;
 	}
 	else
-		ft_memcpy(b, a, n);
+		ft_memcpy(b, a, len);
 	return (dst);
 }
